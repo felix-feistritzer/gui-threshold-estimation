@@ -1,0 +1,5 @@
+.vscode
+build
+src
+gui.spec
+tkinter_test.py
