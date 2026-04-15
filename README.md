@@ -1,20 +1,58 @@
 # GUI Threshold Estimation
 
-This is a GUI version of Threshold Estimation original written by Gudrun Schappacher-Tilp.
+This is a GUI version of Threshold Estimation originally written by Gudrun Schappacher-Tilp.
 For more information see original repository: <https://github.com/schappag/threshold_estimation>
-The goal is to make a user-friendly version, where no installation of python and other packages are needed
+The goal is to make a user-friendly version, that requires no installation of Python and other packages is needed.
 
 ## How to Use
 
-The program is a single portable exe-file.
-After running you see this window.
+The program is a single portable exe-file located in the `dist/` folder.
+After running the program you see this window:
 
-![GUI Screenshot](/sceenshot/sceenshot_1.png)
+<img src="/screenshot/screenshot_1.png" width="500">
 
-**Select File**: Select your data, which should be stored as csv-file.
+- **Select File**: Select your data, which should be stored as csv-file.
 
-Optional you can add labels for the plot.
+- Optional you can add labels for the plot.
 
-**Plot**: Runs the calculation and plots the result. This can, depending on the amount of data, take some time. Please be patient :)
+- **Plot**: Runs the calculation and plots the result. This can, depending on the amount of data, take some time. Please be patient :)
 
-**Save Plot**: Save the generated plot as png-file.
+- **Save Plot**: Save the generated plot as png-file.
+
+## Requirements
+
+- Python
+- Python packages
+    - numpy
+    - pandas
+    - scipy
+    - matplotlib
+    - tkinter
+ 
+## Building the file
+
+If you want to rebuild the program (e.g. for another system, making modifications, etc.), here are the instructions, how to build it yourself.
+
+For building the exe-file, pyinstaller was used.
+See the PyInstaller documentation: <https://pyinstaller.org/en/stable/>
+
+To build the program into a single file, the following command was used:
+
+```
+pyinstaller -F --clean --noconsole gui.py
+```
+
+`pyinstaller` The main command-line tool for PyInstaller, which packages Python applications into standalone executables.
+
+`-F` Bundles everything into a single executable file.
+
+`--clean` Cleans (removes) any temporary files or caches from previous builds before starting.
+
+`--noconsole` Prevents a console window from appearing when the executable runs. Useful for GUI applications.
+
+`gui.py` The python script.
+
+### Output
+
+The executable will be placed in the `dist/` folder within your project directory.
+
