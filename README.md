@@ -56,3 +56,20 @@ pyinstaller -F --clean --noconsole gui.py
 
 The executable will be placed in the `dist/` folder within your project directory.
 
+## Possible Problems
+
+A possible problem under Windows 11 is, that the Smart App Control will block the app.
+
+This is because under Windows 11 files need to be signed. I haven’t done this yet.
+
+When starting the program, you may see the following message: _Smart App Control blocked an app that may be unsafe_
+
+Windows Smart App Control must be disabled to run this app.
+
+To disable Smart App Control, go to:
+
+Settings -> Privacy & security -> App & browser control -> Smart App Control settings
+
+and select _Off_
+
+After that the program should start.
