@@ -13,6 +13,8 @@ After running the program you see this window:
 
 - **Select File**: Select your data, which should be stored as csv-file.
 
+To convert data from xlsx to csv (NIRS, Spiro), see <https://github.com/felix-feistritzer/xlsx-to-csv>
+
 - Optional you can add labels for the plot.
 
 - **Plot**: Runs the calculation and plots the result. This can, depending on the amount of data, take some time. Please be patient :)
